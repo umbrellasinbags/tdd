@@ -20,4 +20,9 @@ public class VowelCounterTest {
         VowelCounter vowelCounter = new VowelCounter();
         Assert.assertEquals(7, vowelCounter.countNumberOfVowels("aeiouae"));
     }
+     @Test
+        public void testNoOfVowelsInConsonantVowelMixedString(){
+            VowelCounter vowelCounter = new VowelCounter();
+            Assert.assertEquals(4, vowelCounter.countNumberOfVowels("AeBCioKL"));
+        }
 }
